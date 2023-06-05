@@ -1,0 +1,42 @@
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.040 try { . "c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+   2        0.035 git status
+   3        0.003 cd ..
+   4        0.031 git status
+   5        0.003 cd .\03-Color-Pallette\Color-Prompt-Generator\
+   6        0.041 git status
+   7        0.060 git add .
+   8        0.125 git commit -m "Reviewed Introduction"
+   9        2.448 git push
+  10        0.326 touch .gitignore
+  11        0.048 git status
+  12        0.105 git add .
+  13        0.133 git commit -m "Added gitignore and python file"
+  14        1.495 git push
+  15        0.042 git status
+  16        0.067 git add .
+  17        0.130 git commit -m "Reworked some files to proper locations"
+  18        1.463 git push
+  19        0.041 git status
+  20        0.064 git commit -m "Added a Docs and Golang directory and base files"
+  21        0.216 git add .
+  22        0.199 git commit -m "Added a Docs and Golang directory and base files"
+  23        1.472 git push
+  24        0.025 ls
+  25        2.049 python .\color-generator.py
+  26        2.144 python .\color-generator.py
+  27        0.076 git add .
+  28        0.133 git commit -m "Testing the response from the API via python file : Working OK"
+  29        1.646 git push
+  30        0.004 cd .\Golang-App\
+  31        4.135 go run .\chatgpt.go
+  32        3.877 go run .\chatgpt.go
+  33        0.147 git add .
+  34        0.173 git commit -m "Testing the response from the API via golang file : Working OK"
+  35        1.473 git push
+  36        0.016 Get-History
+  37        0.002 cd ..
+  38        0.008 ls
+
