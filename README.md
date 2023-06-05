@@ -3,7 +3,7 @@
 ## Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4
 
 - [X] Introduction
-- [ ] Color Rendering in Colaboratory
+- [X] Color Rendering in Colaboratory
 - [ ] Writing a Color Prompt Generator
 - [ ] Writing a Color Swatch Rendering Function
 - [ ] Setting up the Flask Server
