@@ -5,7 +5,7 @@
 - [X] Introduction
 - [X] Color Rendering in Colaboratory
 - [X] Writing a Color Prompt Generator
-- [ ] Writing a Color Swatch Rendering Function
+- [X] Writing a Color Swatch Rendering Function
 - [ ] Setting up the Flask Server
 - [ ] Integrating OpenAI with Server
 - [ ] Writing the Palette Endpoint
