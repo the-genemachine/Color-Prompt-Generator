@@ -6,7 +6,7 @@ import json
 config = dotenv_values(".env")
 openai.api_key = config['OPENAI_API_KEY']
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder="templates")
 
 
 def get_colors(msg):
@@ -37,23 +37,16 @@ def get_colors(msg):
     return colors
 
 
-@app.route('/palette', methods=["POST"])
+@app.route("/palette", methods=["POST"])
 def prompt_palette():
-    query = request.form.get('query')
+    query = request.form.get("query")
     colors = get_colors(query)
     return {"colors": colors}
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt="Explain in short the importance of an index.html file in a website.",
-        max_tokens=200,
-    )
-    return response.choices[0].text
-
-    # return render_template('index.html')
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
