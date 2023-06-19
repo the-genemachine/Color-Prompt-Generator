@@ -8,8 +8,8 @@
 - [X] Writing a Color Swatch Rendering Function
 - [X] Setting up the Flask Server
 - [X] Integrating OpenAI with Server
-- [ ] Writing the Palette Endpoint
-- [ ] Creating the Form
+- [X] Writing the Palette Endpoint
+- [X] Creating the Form
 - [ ] Rendering the Colors in the Browser
 - [ ] Copy and Paste Functionality
 - [ ] Styling the Color Blocks
