@@ -40,3 +40,73 @@
   37        0.002 cd ..
   38        0.008 ls
 
+
+June 21, 2023 12:40:34 AM
+
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.006 d:
+   2        0.002 cd .\Development\Udemy\Mastering-OpenAI\
+   3        0.022 ls
+   4        0.003 cd .\03-Color-Pallette\
+   5        0.005 ls
+   6        0.003 cd .\Color-Prompt-Generator\
+   7        0.007 ls
+   8       21.366 python .\color-generator-tkinter.py
+   9       10.138 pip install Flask
+  10        0.008 ls
+  11        0.019 mkdir Python-Flask
+  12        0.003 cd .\Python-Flask\
+  13        1.085 pip install Flask
+  14        0.006 ls
+  15        0.005 mkdir templates
+  16        2.539 flask
+  17     2:07.059 flask run
+  18        0.324 flask run
+  19     1:15.585 flask run
+  20     1:04.662 flask run
+  21     3:46.083 flask run
+  22       40.351 flask run
+  23     5:23.424 flask run
+  24    36:14.282 flask run --debug
+  25        0.045 git status
+  26        0.156 git add .
+  27        0.350 git commit -m "Started a web app via Flask and integrated with OpenAI"
+  28        2.201 git push
+  29        0.044 git status
+  30        0.036 git add .
+  31        0.046 git commit -m "Update readme file"
+  32        1.243 git push
+  33        0.003 cd ..
+  34        0.199 git add .
+  35        0.274 git commit -m "Update readme file"
+  36        1.685 git push
+  37        0.290 flask run --debug
+  38        0.003 cd .\Python-Flask\
+  39 19:36:49.904 flask run --debug
+  40    10:31.185 flask run --debug
+  41    59:39.563 flask run --debug
+  42        0.047 git status
+  43        0.117 git add .
+  44        0.287 git commit -m "Palette endpoint set up"
+  45        1.789 git push
+  46  1:32:28.677 flask run --debug
+  47        0.310 git status
+  48        0.177 git add .
+  49        0.313 git commit -m "Added a simple form"
+  50        4.983 gp
+  51        2.034 git push
+  52        0.002 cd ..
+  53        0.043 git status
+  54        0.100 git add .
+  55        0.155 git commit -m "Update readme file"
+  56        1.661 git push
+  57        0.005 cd .\Python-Flask\
+  58 25:47:35.539 flask run --debug
+  59        0.018 Get-History
+  60        0.019 date
+  61        0.067 date >> .\Docs\cli.hist
+  62        0.003 cd ..
+  63        0.008 date >> .\Docs\cli.hist
+

@@ -10,9 +10,9 @@
 - [X] Integrating OpenAI with Server
 - [X] Writing the Palette Endpoint
 - [X] Creating the Form
-- [ ] Rendering the Colors in the Browser
-- [ ] Copy and Paste Functionality
-- [ ] Styling the Color Blocks
-- [ ] Styling the Form
-- [ ] Refactoring Our Front-End Code
+- [X] Rendering the Colors in the Browser
+- [X] Copy and Paste Functionality
+- [X] Styling the Color Blocks
+- [X] Styling the Form
+- [X] Refactoring Our Front-End Code
   

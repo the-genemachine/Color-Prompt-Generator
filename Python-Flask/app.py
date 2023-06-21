@@ -6,7 +6,7 @@ import json
 config = dotenv_values(".env")
 openai.api_key = config['OPENAI_API_KEY']
 
-app = Flask(__name__, template_folder="templates")
+app = Flask(__name__, template_folder="templates", static_url_path="", static_folder="static")
 
 
 def get_colors(msg):
@@ -32,8 +32,8 @@ def get_colors(msg):
         prompt=prompt,
         max_tokens=200,
     )
-    # colors = json.loads(response["choices"][0]["text"])
-    colors = response.choices[0].text
+    colors = json.loads(response["choices"][0]["text"])
+    # colors = response.choices[0].text
     return colors
 
 

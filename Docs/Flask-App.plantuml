@@ -1,0 +1,30 @@
+@startuml
+actor User
+participant "Browser\n(HTML, CSS, JS)" as Browser
+box "Server Side"
+participant FlaskApp
+participant OpenAI_API
+end box
+database ".env File"
+component BrowserDisplay
+
+User -> Browser: Enter color query and submit form
+activate Browser
+Browser -> FlaskApp: Send POST request (color query)
+activate FlaskApp
+
+FlaskApp -> ".env File": Retrieve API key
+".env File" --> FlaskApp: Return API key
+
+FlaskApp -> OpenAI_API: Send color query and API key
+activate OpenAI_API
+OpenAI_API --> FlaskApp: Return color palette
+deactivate OpenAI_API
+
+FlaskApp --> Browser: Send color palette response
+deactivate FlaskApp
+Browser -> BrowserDisplay: Display color palette
+deactivate Browser
+
+User --> BrowserDisplay: View color palette
+@enduml

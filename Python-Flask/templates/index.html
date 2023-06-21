@@ -1,40 +1,28 @@
 <!doctype html>
 <html lang="en">
+    
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Color Palette Generator</title>
+
+    <link rel="stylesheet" href="app.css">
+
 </head>
+
 <body>
-    <h1>Hello</h1>
+    
+    <div class="container"></div>
+
     <form id="form">
         <input type="text" name="query">
-        <button type="submit">Submit</button>
+        <button class="btn" type="submit">Submit</button>
     </form>
 
-    <script>
-        const form = document.querySelector('#form');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const query = form.elements.query.value;
-            console.log(query);
-            fetch('/palette', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: new URLSearchParams({
-                    'query': query
-                })
-            })
-                .then((response) => response.json())
-                .then(data => {
-                    console.log(data);
-                })
-        })
-    </script>
+    <script src="app.js"></script>
 
 </body>
 </html>
